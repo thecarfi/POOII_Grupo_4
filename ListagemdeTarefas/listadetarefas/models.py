@@ -13,5 +13,9 @@ class tarefa(models.Model):
     pessoa_responsavel = models.ForeignKey(Responsavel, on_delete=models.CASCADE)
 
 
-
+class grupo_da_sala(models.Model):
+    nome1 = models.CharField(max_length= 100, null=False, blank=False)
+    nome2 = models.CharField(max_length= 100, null=False, blank=False)
+    nome3 = models.CharField(max_length= 100, null=False, blank=False)
+    nome4 = models.CharField(max_length= 100, null=False, blank=False)
 # Create your models here.
